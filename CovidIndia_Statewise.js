@@ -50,8 +50,10 @@
             'x-rapidapi-key' : 'd18cdeb3a2mshab6824adf713c9ep130fb2jsncca2d444588d'
           } 
         }); */
+        
+        //https://api.covid19india.org/data.json
 
-        $.getJSON("https://api.covid19india.org/data.json", function(resp) {
+        $.getJSON("https://raw.githack.com/ssakthiprabha/WDC/main/data.json", function(resp) {
             var feat = resp.statewise,countryVal = "India",
                 tableData = [];
             
